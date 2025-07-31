@@ -1,3 +1,13 @@
+User Roles & Login Credentials
+| Role      | Email          | Password | Description                                                     |
+| --------- | -------------- | -------- | --------------------------------------------------------------- |
+| NGO       | ngo\@123       | 111      | Manage campaigns, events, stories, and organizational profile.  |
+| Donor     | donor\@123     | 222      | Track donations and discover new NGOs or causes to support.     |
+| Volunteer | volunteer\@123 | 333      | Manage volunteering activities and apply for new opportunities. |
+| Admin     | admin\@123     | 444      | Oversee platform analytics, manage users, NGOs, and content.    |
+
+
+
 ImpactHub – Connecting Change-Makers
 ImpactHub is a centralized web platform built to connect NGOs, donors, volunteers, and administrators, fostering collaboration and transparency in the social impact ecosystem. It streamlines the management of charitable activities and maximizes impact through an intuitive and role-specific interface.
 
@@ -42,16 +52,7 @@ Modern & Responsive Design: Built with Bootstrap 5 for a seamless experience acr
 
 Interactive UI: Animated counters, toast notifications, and dynamic modals for a polished, professional feel.
 
-User Roles & Login Credentials
-Role	Email	Password	Description
 
-NGO	ngo@123	111	Manage campaigns, events, stories, and organizational profile.
-
-Donor	donor@123	222	Track donations and discover new NGOs or causes to support.
-
-Volunteer	volunteer@123	333	Manage volunteering activities and apply for new opportunities.
-
-Admin	admin@123	444	Oversee platform analytics, manage users, NGOs, and content.
 
 Tech Stack
 Frontend: HTML5, CSS3, JavaScript (ES6)
