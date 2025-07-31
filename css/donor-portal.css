@@ -1,0 +1,148 @@
+/* --- STYLES FOR DONOR PORTAL PAGES --- */
+
+body.portal-body {
+    background-color: #f8f9fa; /* Light grey background */
+    padding-top: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Geometric Background */
+.portal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.portal-background .shape {
+    position: absolute;
+    inset: 0;
+    opacity: 0.15;
+}
+
+.portal-background .shape-1 { 
+    background-color: #e0e7ff; 
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 15%);
+}
+
+.portal-background .shape-2 { 
+    background-color: #c7d2fe; 
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 0 5%);
+}
+
+.portal-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    max-width: 960px;
+}
+
+/* Stat Cards */
+.stat-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e9ecef;
+    text-align: center;
+}
+
+.stat-card h2 {
+    font-size: 2rem;
+}
+
+/* Content Cards (Tables, NGO Profile) */
+.content-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e9ecef;
+}
+
+/* Table Styles */
+.custom-table {
+    vertical-align: middle;
+}
+.custom-table thead th {
+    font-weight: 500;
+    color: #6c757d;
+    border: none;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.custom-table tbody tr {
+    border-bottom: 1px solid #f1f3f5;
+}
+.custom-table tbody tr:last-child {
+    border-bottom: none;
+}
+.custom-table tbody td {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    border: none;
+    font-weight: 500;
+}
+
+.table-link {
+    color: var(--dark-text);
+    text-decoration: none;
+    font-weight: 500;
+}
+.table-link:hover {
+    text-decoration: underline;
+}
+
+/* Filters */
+.filter-btn {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    color: var(--dark-text);
+    font-weight: 500;
+}
+
+.search-bar {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background-color: #fff;
+}
+.search-bar .form-control, .search-bar .input-group-text {
+    border: none;
+    background-color: transparent;
+}
+.search-bar .form-control:focus {
+    box-shadow: none;
+}
+
+/* NGO Profile Specific Styles (re-using from ngo-donors) */
+#donors-hero { padding-bottom: 1rem; }
+.btn-donate-now {
+    background-color: #f1f3f5;
+    color: var(--dark-text);
+    border-radius: 50px;
+    padding: 10px 24px;
+    font-weight: 500;
+    border: 1px solid #dee2e6;
+}
+.banner-image { width: 100%; border-radius: 12px; }
+.stat-card-profile { background-color: #f8f9fa; padding: 1.5rem; border-radius: 12px; text-align: center;}
+.story-card { background-color: #fff; border-radius: 12px; overflow: hidden; height: 100%; border: 1px solid #e9ecef; }
+.story-card img { width: 100%; height: 150px; object-fit: cover; }
+.story-card .card-body { padding: 1rem; }
+/* --- STYLES FOR DONOR PORTAL PAGES --- */
+
+/* ... (all existing styles remain the same) ... */
+
+
+/* --- PASTE THIS CSS SNIPPET AT THE END OF THE FILE --- */
+.portal-footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e9ecef;
+}

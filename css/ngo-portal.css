@@ -1,0 +1,88 @@
+/* --- STYLES FOR NEW NGO PORTAL --- */
+
+body.portal-body {
+    background-color: #f8f9fa;
+    padding-top: 0;
+}
+
+.portal-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    max-width: 960px;
+}
+
+/* Dashboard Page */
+.stat-card {
+    background-color: #f1f3f5;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: left;
+}
+.stat-card h2 { font-size: 2rem; }
+
+.activity-feed {
+    position: relative;
+    padding-left: 2rem;
+}
+.activity-feed::before { content: ''; position: absolute; left: 11px; top: 5px; bottom: 5px; width: 2px; background-color: #dee2e6; }
+.activity-item { position: relative; display: flex; gap: 1.5rem; margin-bottom: 1.5rem; align-items: center; }
+.activity-item i { position: absolute; left: -1.75rem; top: 50%; transform: translateY(-50%); width: 24px; height: 24px; background-color: #f8f9fa; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #6c757d; }
+.activity-link { color: #0d6efd; font-weight: 500; text-decoration: none; }
+.activity-link:hover { text-decoration: underline; }
+
+.portal-actions-footer {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 50px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.action-buttons-group {
+    display: flex;
+    gap: 0.5rem;
+    border-right: 1px solid #dee2e6;
+    padding-right: 1rem;
+}
+
+/* Inner Pages (Campaigns, Volunteers, Stories) */
+.page-header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+.page-header h1 { text-align: center; margin: 0; }
+.page-header .back-link { text-decoration: none; color: #6c757d; font-weight: 500; }
+.page-header .back-link:hover { color: #000; }
+.page-header .btn { justify-self: end; }
+
+.content-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e9ecef;
+}
+.custom-table { vertical-align: middle; }
+.custom-table thead th { font-weight: 500; color: #6c757d; border: none; padding-bottom: 1rem; font-size: 0.9rem; }
+.custom-table tbody tr { border-top: 1px solid #f1f3f5; }
+.custom-table tbody td { padding: 1.25rem 1rem; border: none; font-weight: 500; }
+.actions-links a { color: #0d6efd; text-decoration: none; display: block; line-height: 1.6; }
+.status-badge { display: inline-block; padding: 0.3rem 0.85rem; border-radius: 50px; font-size: 0.8rem; font-weight: 600; background-color: #e9ecef; color: #495057; }
+.status-badge.status-active { background-color: #dbeafe; color: #2563eb; }
+.portal-footer { text-align: center; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #e9ecef; }
+
+/* Stories Page */
+.story-list { background-color: #fff; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06); border: 1px solid #e9ecef; }
+.story-item { display: flex; gap: 1.5rem; padding: 1.5rem 0; border-bottom: 1px solid #f1f3f5; align-items: center; }
+.story-item:last-child { border-bottom: none; }
+.story-text { flex-grow: 1; }
+.story-item img { width: 150px; height: 100px; object-fit: cover; border-radius: 8px; flex-shrink: 0; }
