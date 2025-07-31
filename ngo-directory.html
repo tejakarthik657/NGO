@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Directory - ImpactHub</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/ngo-directory.css">
+</head>
+<body id="ngo-directory-page">
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="https://i.pinimg.com/736x/67/56/08/675608c7a0371dab124b7050e5681ba4.jpg" alt="ImpactHub Logo" class="me-2" height="30">
+                    <strong class="brand-text">ImpactHub</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ngo-directory.html">NGO-Directory</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ngo-profile.html">NGO-Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <!-- UPDATED: Wrapped content in a container to give it a white background -->
+        <div class="directory-container">
+            <section id="find-org" class="text-center">
+                <h1 class="display-5 fw-bold mb-4">Find an Organization to Support</h1>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="input-group search-bar-lg mb-4">
+                            <span class="input-group-text bg-transparent border-0"><i class="bi bi-search"></i></span>
+                            <input type="text" class="form-control bg-transparent border-0" placeholder="Search for organizations">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center gap-2 mb-5">
+                    <div class="dropdown">
+                        <button class="btn filter-btn dropdown-toggle" type="button" data-bs-toggle="dropdown">Category</button>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Education</a></li><li><a class="dropdown-item" href="#">Environment</a></li></ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn filter-btn dropdown-toggle" type="button" data-bs-toggle="dropdown">Location</button>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">New York, USA</a></li><li><a class="dropdown-item" href="#">London, UK</a></li></ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn filter-btn dropdown-toggle" type="button" data-bs-toggle="dropdown">More Filters</button>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Newly Added</a></li><li><a class="dropdown-item" href="#">Top Rated</a></li></ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="org-grid">
+                <div class="row gy-5">
+                    <div class="col-lg-4 col-md-6"><a href="#" class="org-profile-card"><img src="https://i.pinimg.com/736x/2f/3f/dc/2f3fdc2e5562ae85acbb41ada5252581.jpg" alt="Helping Hands"><div class="card-body"><h5 class="card-title">Helping Hands</h5><p class="card-text text-muted">Empowering communities through education and skill development.</p></div></a></div>
+                    <div class="col-lg-4 col-md-6"><a href="#" class="org-profile-card"><img src="https://i.pinimg.com/1200x/28/0d/ff/280dffe4c6360828a0052e5525f8647b.jpg" alt="Green Earth Initiative"><div class="card-body"><h5 class="card-title">Green Earth Initiative</h5><p class="card-text text-muted">Protecting our planet through sustainable practices and conservation.</p></div></a></div>
+                    <div class="col-lg-4 col-md-6"><a href="#" class="org-profile-card"><img src="https://i.pinimg.com/1200x/d4/db/c2/d4dbc2c4786c059d778adf71723b6bfc.jpg" alt="Youth Empowerment League"><div class="card-body"><h5 class="card-title">Youth Empowerment League</h5><p class="card-text text-muted">Fostering leadership and innovation among young people.</p></div></a></div>
+                    <div class="col-lg-4 col-md-6"><a href="#" class="org-profile-card"><img src="https://i.pinimg.com/1200x/0d/97/99/0d97992f9a8a81e341e249a688c72191.jpg" alt="Animal Rescue Alliance"><div class="card-body"><h5 class="card-title">Animal Rescue Alliance</h5><p class="card-text text-muted">Providing care and shelter for animals in need.</p></div></a></div>
+                    <div class="col-lg-4 col-md-6"><a href="#" class="org-profile-card"><img src="https://i.pinimg.com/1200x/91/7b/ed/917bed8a5e2c4b84e2d7bcef1fe1cbb0.jpg" alt="Community Health Network"><div class="card-body"><h5 class="card-title">Community Health Network</h5><p class="card-text text-muted">Improving access to healthcare in underserved areas.</p></div></a></div>
+                    <div class="col-lg-4 col-md-6"><a href="#" class="org-profile-card"><img src="https://i.pinimg.com/736x/65/5b/81/655b81dc33c00f9fd29ce510700bdebf.jpg" alt="Global Education Fund"><div class="card-body"><h5 class="card-title">Global Education Fund</h5><p class="card-text text-muted">Ensuring quality education for children worldwide.</p></div></a></div>
+                </div>
+            </section>
+
+            <nav aria-label="Page navigation" class="d-flex justify-content-center mt-5">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+ <footer class="directory-footer text-center py-5">
+        <div class="container">
+            <a href="index.html" class="btn btn-back-to-landing">Back to Landing Page</a>
+        </div>
+    </footer>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

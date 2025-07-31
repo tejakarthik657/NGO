@@ -1,0 +1,88 @@
+/* --- STYLES FOR TRANSPARENCY LEDGER PAGE --- */
+
+body#transparency-page {
+    background-color: var(--main-bg-color);
+}
+
+.transparency-container {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card-transparency {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+    text-align: center;
+}
+
+.transaction-search {
+    background-color: #f1f3f5;
+    border-radius: 8px;
+    border: none;
+}
+.transaction-search .form-control,
+.transaction-search .input-group-text {
+    background-color: transparent;
+    border: none;
+}
+.transaction-search .form-control:focus {
+    box-shadow: none;
+}
+
+.transaction-table {
+    vertical-align: middle;
+}
+.transaction-table thead th {
+    font-weight: 500;
+    color: #6c757d;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border: none;
+}
+.transaction-table tbody tr {
+    border-bottom: 1px solid #f1f3f5;
+}
+.transaction-table tbody tr:last-child {
+    border-bottom: none;
+}
+.transaction-table tbody td {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: none;
+}
+.view-report {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--dark-text);
+}
+.view-report:hover {
+    text-decoration: underline;
+}
+/* UPDATED: Styles for the correct footer and button */
+.volunteer-footer {
+    /* White background from the design */
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.btn-back-to-landing {
+    background-color: #a9c6d9; /* Light blue from your image */
+    color: var(--dark-text);   /* Dark text from your image */
+    border: none;
+    border-radius: 50px; /* Pill shape */
+    padding: 12px 35px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-back-to-landing:hover {
+    background-color: #9ab8cd; /* Slightly darker hover color */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}

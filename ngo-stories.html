@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories - NGO Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ngo-portal.css">
+</head>
+<body class="portal-body">
+    <main class="portal-container container">
+        <div class="page-header">
+            <a href="ngo-dashboard.html" class="back-link"><i class="bi bi-arrow-left"></i> Dashboard</a>
+            <h1 class="display-5 fw-bold">Stories</h1>
+            <button class="btn btn-light rounded-pill" data-bs-toggle="modal" data-bs-target="#creationModal" data-modal-type="Story">+ Write a New Story</button>
+        </div>
+
+        <section class="story-list mt-4">
+            <h3 class="fw-bold mb-4">Published</h3>
+            <div class="story-item">
+                <div class="story-text">
+                    <h5 class="fw-bold">Empowering Youth Through Education</h5>
+                    <p class="text-muted">Our recent initiative focused on providing educational resources to underprivileged youth in rural areas. We distributed books, set up learning centers, and conducted workshops to enhance their learning experience.</p>
+                </div>
+                <img src="https://i.pinimg.com/736x/4f/d2/23/4fd223aa40a7b80ccf2d5ec462f541fd.jpg" alt="Education story">
+            </div>
+            <div class="story-item">
+                <div class="story-text">
+                    <h5 class="fw-bold">Community Health Camp Success</h5>
+                    <p class="text-muted">We organized a health camp in a remote village, offering free medical check-ups, distributing essential medicines, and raising awareness about preventive healthcare. The camp served over 500 people, making a significant impact on their well-being.</p>
+                </div>
+                <img src="https://i.pinimg.com/736x/da/d0/a4/dad0a4bf8fea1738420bb28e2ab0d4bb.jpg" alt="Health camp story">
+            </div>
+            <div class="story-item">
+                <div class="story-text">
+                    <h5 class="fw-bold">Environmental Cleanup Drive</h5>
+                    <p class="text-muted">We collected waste, planted trees, and educated the community about the importance of environmental conservation. The initiative transformed the area into a cleaner and greener space.</p>
+                </div>
+                <img src="https://i.pinimg.com/736x/c9/b5/34/c9b534f2f7afb10d0f2c7c83a4d8c922.jpg" alt="Cleanup drive story">
+            </div>
+             <div class="story-item">
+                <div class="story-text">
+                    <h5 class="fw-bold">Supporting Farmers in Distress</h5>
+                    <p class="text-muted">We provided financial aid and resources to farmers affected by drought. Our support helped them sustain their livelihoods, improve their farming practices, and cope with the challenges posed by climate change.</p>
+                </div>
+                <img src="https://i.pinimg.com/736x/0b/fa/a0/0bfaa0d8c6c4a9e781c25eb46b9e0d79.jpg" alt="Farmer story">
+            </div>
+            <div class="story-item">
+                <div class="story-text">
+                    <h5 class="fw-bold">Animal Rescue and Rehabilitation</h5>
+                    <p class="text-muted">Our animal rescue team saved and rehabilitated several stray animals, providing them with shelter, medical care, and love. We also conducted awareness campaigns to promote animal welfare and responsible pet ownership.</p>
+                </div>
+                <img src="https://i.pinimg.com/736x/c1/61/3f/c1613f5687225777d1a7918fd13815c8.jpg" alt="Animal rescue story">
+            </div>
+        </section>
+
+        <footer class="portal-footer">
+             <a href="get-started.html" class="btn btn-outline-secondary rounded-pill">Log Out</a>
+        </footer>
+    </main>
+    
+    <!-- Universal Creation Modal is included at the end -->
+    <div id="modal-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

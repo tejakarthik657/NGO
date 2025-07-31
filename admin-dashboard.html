@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - ImpactHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin-portal.css">
+</head>
+<body class="portal-body">
+
+    <main class="portal-container container">
+        <h1 class="display-5 fw-bold">Platform Overview</h1>
+
+        <!-- Pending Actions -->
+        <section class="mt-5">
+            <h3 class="fw-bold mb-4">Pending Actions</h3>
+            <div class="action-item">
+                <div class="d-flex align-items-center">
+                    <div class="action-icon"><i class="bi bi-journal-check"></i></div>
+                    <div>
+                        <h5 class="fw-bold mb-0">New NGO Applications</h5>
+                        <p class="text-muted mb-0">5 NGOs require your review</p>
+                    </div>
+                </div>
+                <a href="admin-ngo-management.html" class="btn btn-light rounded-pill">Review Now</a>
+            </div>
+            <div class="action-item">
+                <div class="d-flex align-items-center">
+                    <div class="action-icon"><i class="bi bi-flag"></i></div>
+                    <div>
+                        <h5 class="fw-bold mb-0">Flagged Content Reports</h5>
+                        <p class="text-muted mb-0">2 reports need your attention</p>
+                    </div>
+                </div>
+                <a href="admin-content-moderation.html" class="btn btn-light rounded-pill">View Reports</a>
+            </div>
+        </section>
+
+        <!-- Platform Statistics -->
+        <section class="mt-5">
+            <h3 class="fw-bold mb-4">Platform Statistics</h3>
+            <div class="row gy-4">
+                <div class="col-md-6 col-lg-3"><div class="stat-card"><p class="text-muted small mb-1">Registered Users</p><h4 class="fw-bold">12,345</h4><p class="text-muted small mb-0">(Donors: 8,500, Volunteers: 3,845)</p></div></div>
+                <div class="col-md-6 col-lg-3"><div class="stat-card"><p class="text-muted small mb-1">Active NGOs</p><h4 class="fw-bold">250</h4><p class="text-muted small mb-0">(Approved: 230, Pending: 20)</p></div></div>
+                <div class="col-md-6 col-lg-3"><div class="stat-card"><p class="text-muted small mb-1">Donations (Last 24h)</p><h4 class="fw-bold">$5,678</h4><p class="text-muted small mb-0">(120 Transactions)</p></div></div>
+                <div class="col-md-6 col-lg-3"><div class="stat-card"><p class="text-muted small mb-1">Platform Health</p><h4 class="fw-bold text-success">All Systems Operational</h4></div></div>
+            </div>
+        </section>
+
+        <!-- Footer Navigation -->
+        <footer class="portal-actions-footer">
+            <div class="action-buttons-group">
+                <a href="admin-ngo-management.html" class="btn btn-light rounded-pill"><i class="bi bi-shield-check me-2"></i>NGO Management</a>
+                <a href="admin-user-management.html" class="btn btn-light rounded-pill"><i class="bi bi-people me-2"></i>User Management</a>
+                <a href="admin-content-moderation.html" class="btn btn-light rounded-pill"><i class="bi bi-card-checklist me-2"></i>Content Moderation</a>
+            </div>
+            <a href="get-started.html" class="btn btn-outline-secondary rounded-pill">Log Out</a>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

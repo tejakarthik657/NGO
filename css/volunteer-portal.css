@@ -1,0 +1,89 @@
+/* --- STYLES FOR VOLUNTEER PORTAL PAGES --- */
+
+body.portal-body {
+    background-color: #f8f9fa;
+    padding-top: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+.portal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    opacity: 0.6;
+}
+
+.portal-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    max-width: 1140px;
+}
+
+/* Dashboard Page */
+.upcoming-event-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e9ecef;
+}
+
+/* Find Opportunity Page */
+.search-bar-lg { background-color: #fff; border: 1px solid #dee2e6; border-radius: 12px; }
+.search-bar-lg .form-control, .search-bar-lg .input-group-text { border: none; background-color: transparent; }
+.search-bar-lg .form-control:focus { box-shadow: none; }
+
+.opportunity-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    border: 1px solid #e9ecef;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.opportunity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+.opportunity-card img { width: 100%; height: 180px; object-fit: cover; }
+.opportunity-card .card-body { padding: 1rem 1.25rem; }
+.opportunity-card-link { text-decoration: none; color: inherit; }
+
+/* Event Details Page */
+.event-details-card {
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e9ecef;
+}
+.event-sidebar {
+    background-color: #f8f9fa;
+    border-left: 1px solid #e9ecef;
+}
+.skill-badge {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 0.35rem 0.85rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* General Shared Styles */
+.content-card { background-color: #fff; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06); border: 1px solid #e9ecef; }
+.custom-table { vertical-align: middle; }
+.custom-table thead th { font-weight: 500; color: #6c757d; border: none; padding-bottom: 1rem; text-transform: uppercase; font-size: 0.8rem; }
+.custom-table tbody tr { border-bottom: 1px solid #f1f3f5; }
+.custom-table tbody tr:last-child { border-bottom: none; }
+.custom-table tbody td { padding: 1.25rem 1rem; border: none; font-weight: 500; }
+.table-link { color: var(--dark-text); font-weight: 500; text-decoration: none; }
+.table-link:hover { text-decoration: underline; }
+.filter-btn { background-color: #fff; border: 1px solid #dee2e6; border-radius: 8px; font-weight: 500; }
+.portal-footer { text-align: center; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #e9ecef; }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Details - ImpactHub</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/campaign-details.css">
+</head>
+<body id="campaign-details-page">
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="https://i.pinimg.com/736x/67/56/08/675608c7a0371dab124b7050e5681ba4.jpg" alt="ImpactHub Logo" class="me-2" height="30">
+                    <strong class="brand-text">ImpactHub</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ngo-directory.html">NGO-Directory</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ngo-profile.html">NGO-Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <div class="campaign-container">
+            <div class="row g-4">
+                <!-- Left Column: Campaign Info -->
+                <div class="col-lg-7">
+                    <div class="campaign-banner" style="background-image: url('https://i.pinimg.com/1200x/d2/c7/8f/d2c78f969302010bed881197b16d2202.jpg');"></div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                        <span class="carousel-dot"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+
+                    <div class="campaign-content mt-4">
+                        <h1 class="display-6 fw-bold">Support Education for Underprivileged Children</h1>
+                        <p class="text-muted">This campaign aims to provide educational resources and support to underprivileged children in rural areas. Your donation will help us build schools, provide learning materials, and train teachers to ensure every child has access to quality education.</p>
+                        
+                        <h3 class="fw-bold mt-4">About the Organization</h3>
+                        <p class="text-muted">The Bright Future Foundation is dedicated to improving the lives of children through education and community development. We work in partnership with local communities to create sustainable solutions that empower children and their families.</p>
+                        
+                        <h3 class="fw-bold mt-4">Impact</h3>
+                        <p class="text-muted">With your support, we can reach more children and make a lasting impact on their lives. Our programs have already helped over 500 children gain access to education, and we aim to double that number in the next year. Your donation will directly contribute to this goal.</p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Donation Card -->
+                <div class="col-lg-5">
+                    <div class="donate-card">
+                        <div class="card-body">
+                            <h4 class="fw-bold mb-3">Donate to this Campaign</h4>
+                            <div class="d-flex justify-content-between small text-muted mb-1"><span>Raised</span><span>Goal</span></div>
+                            <div class="progress mb-2" style="height: 10px;"><div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            <div class="d-flex justify-content-between small fw-bold mb-3"><span>$6,000</span><span>$10,000</span></div>
+                            <div class="donor-avatars mb-2">
+                                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100" alt="Donor 1" class="avatar">
+                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100" alt="Donor 2" class="avatar">
+                                <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=100" alt="Donor 3" class="avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" alt="Donor 4" class="avatar">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100" alt="Donor 5" class="avatar">
+                            </div>
+                            <p class="text-muted small">12 people have donated</p>
+                            <hr>
+                            <p class="text-muted small mb-2">Choose an amount</p>
+                            <div class="row g-2 mb-3">
+                                <div class="col-6"><button class="btn btn-amount w-100" data-amount="25">$25</button></div>
+                                <div class="col-6"><button class="btn btn-amount w-100" data-amount="50">$50</button></div>
+                                <div class="col-6"><button class="btn btn-amount w-100" data-amount="100">$100</button></div>
+                                <div class="col-6"><button class="btn btn-amount w-100" data-amount="250">$250</button></div>
+                            </div>
+                            <input type="number" class="form-control other-amount-input" id="other-amount" placeholder="Other amount">
+                            <button class="btn btn-donate-now w-100 mt-3" id="donate-now-btn">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <div class="text-center mt-5">
+                 <a href="index.html" class="btn btn-back-to-landing">Back to Landing Page</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
