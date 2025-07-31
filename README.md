@@ -6,7 +6,7 @@ User Roles & Login Credentials
 | Volunteer | volunteer\@123 | 333      | Manage volunteering activities and apply for new opportunities. |
 | Admin     | admin\@123     | 444      | Oversee platform analytics, manage users, NGOs, and content.    |
 
-
+Live Demo Link : https://ngo-three-smoky.vercel.app
 
 ImpactHub – Connecting Change-Makers
 ImpactHub is a centralized web platform built to connect NGOs, donors, volunteers, and administrators, fostering collaboration and transparency in the social impact ecosystem. It streamlines the management of charitable activities and maximizes impact through an intuitive and role-specific interface.
